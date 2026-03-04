@@ -1,0 +1,107 @@
+{
+  "departments": [
+    {"id": 1, "name": "경영지원본부", "description": "회사 전반의 경영지원 업무를 총괄하는 본부", "parent_id": null, "sort_order": 1},
+    {"id": 2, "name": "인사팀", "description": "채용, 인사관리, 급여, 교육훈련, 복리후생 등 인사 전반 업무 담당", "parent_id": 1, "sort_order": 1},
+    {"id": 3, "name": "총무팀", "description": "사무환경 관리, 자산관리, 비품관리, 사내행사, 복장규정 관리 등 총무 업무 담당", "parent_id": 1, "sort_order": 2},
+    {"id": 4, "name": "재무팀", "description": "회계, 결산, 세무, 자금관리, 예산편성 등 재무 업무 담당", "parent_id": 1, "sort_order": 3},
+    {"id": 5, "name": "구매팀", "description": "자재구매, 외주관리, 계약관리, 협력업체 관리 등 구매 업무 담당", "parent_id": 1, "sort_order": 4},
+    {"id": 6, "name": "기술본부", "description": "소프트웨어 개발, 시스템 운영, 기술 혁신을 총괄하는 본부", "parent_id": null, "sort_order": 2},
+    {"id": 7, "name": "개발1팀", "description": "웹/모바일 서비스 개발, 프론트엔드/백엔드 개발 업무 담당", "parent_id": 6, "sort_order": 1},
+    {"id": 8, "name": "개발2팀", "description": "AI/빅데이터 플랫폼 개발, 데이터 파이프라인 구축 업무 담당", "parent_id": 6, "sort_order": 2},
+    {"id": 9, "name": "인프라팀", "description": "서버, 네트워크, 클라우드 인프라 운영 및 보안 관리 업무 담당", "parent_id": 6, "sort_order": 3},
+    {"id": 10, "name": "QA팀", "description": "소프트웨어 품질 보증, 테스트 자동화, 릴리스 관리 업무 담당", "parent_id": 6, "sort_order": 4},
+    {"id": 11, "name": "영업본부", "description": "매출 목표 달성 및 고객 관리를 총괄하는 본부", "parent_id": null, "sort_order": 3},
+    {"id": 12, "name": "국내영업팀", "description": "국내 기업 고객 대상 솔루션 영업, 제안, 계약 관리 업무 담당", "parent_id": 11, "sort_order": 1},
+    {"id": 13, "name": "해외영업팀", "description": "해외 시장 개척, 글로벌 고객 관리, 수출 업무 담당", "parent_id": 11, "sort_order": 2},
+    {"id": 14, "name": "마케팅팀", "description": "브랜드 관리, 디지털 마케팅, 시장 조사, 콘텐츠 제작 업무 담당", "parent_id": 11, "sort_order": 3},
+    {"id": 15, "name": "고객지원팀", "description": "고객 문의 대응, 기술 지원, 서비스 만족도 관리 업무 담당", "parent_id": 11, "sort_order": 4},
+    {"id": 16, "name": "연구소", "description": "신기술 연구, 특허 출원, R&D 프로젝트 수행을 총괄하는 조직", "parent_id": null, "sort_order": 4},
+    {"id": 17, "name": "AI연구팀", "description": "인공지능, 머신러닝, 자연어처리 등 AI 기술 연구개발 업무 담당", "parent_id": 16, "sort_order": 1},
+    {"id": 18, "name": "보안연구팀", "description": "정보보안, 암호화 기술, 취약점 분석 등 보안 기술 연구 업무 담당", "parent_id": 16, "sort_order": 2}
+  ],
+  "employees": [
+    {"name": "김영수", "department_id": 2, "position": "팀장", "role": "인사기획, 채용총괄, 인사위원회 간사", "email": "ys.kim@company.com", "phone": "02-1234-1001", "is_department_head": true},
+    {"name": "이수진", "department_id": 2, "position": "과장", "role": "급여관리, 4대보험, 퇴직급여 정산", "email": "sj.lee@company.com", "phone": "02-1234-1002", "is_department_head": false},
+    {"name": "박지훈", "department_id": 2, "position": "대리", "role": "채용전형, 수습관리, 근로계약", "email": "jh.park@company.com", "phone": "02-1234-1003", "is_department_head": false},
+    {"name": "최민아", "department_id": 2, "position": "대리", "role": "휴가관리, 근태관리, 유연근무제", "email": "ma.choi@company.com", "phone": "02-1234-1004", "is_department_head": false},
+    {"name": "정하은", "department_id": 2, "position": "사원", "role": "교육훈련, 승진심사, 인사기록 관리", "email": "he.jung@company.com", "phone": "02-1234-1005", "is_department_head": false},
+
+    {"name": "한동석", "department_id": 3, "position": "팀장", "role": "총무기획, 사무환경 총괄, 복장규정 관리", "email": "ds.han@company.com", "phone": "02-1234-2001", "is_department_head": true},
+    {"name": "윤서연", "department_id": 3, "position": "과장", "role": "자산관리, 비품관리, 사무실 환경", "email": "sy.yoon@company.com", "phone": "02-1234-2002", "is_department_head": false},
+    {"name": "김태호", "department_id": 3, "position": "대리", "role": "사내행사, 경조사 관리, 복리후생 운영", "email": "th.kim@company.com", "phone": "02-1234-2003", "is_department_head": false},
+    {"name": "오지은", "department_id": 3, "position": "대리", "role": "문서관리, 법무지원, 사규 관리", "email": "je.oh@company.com", "phone": "02-1234-2004", "is_department_head": false},
+    {"name": "임재현", "department_id": 3, "position": "사원", "role": "차량관리, 보안관리, 안전관리", "email": "jh.lim@company.com", "phone": "02-1234-2005", "is_department_head": false},
+
+    {"name": "송민철", "department_id": 4, "position": "팀장", "role": "재무기획, 결산 총괄, 자금관리", "email": "mc.song@company.com", "phone": "02-1234-3001", "is_department_head": true},
+    {"name": "장유리", "department_id": 4, "position": "과장", "role": "회계처리, 전표관리, 재무제표 작성", "email": "yr.jang@company.com", "phone": "02-1234-3002", "is_department_head": false},
+    {"name": "백승환", "department_id": 4, "position": "대리", "role": "세무신고, 부가세, 법인세 관리", "email": "sh.baek@company.com", "phone": "02-1234-3003", "is_department_head": false},
+    {"name": "허지민", "department_id": 4, "position": "대리", "role": "예산편성, 비용분석, 경비정산", "email": "jm.heo@company.com", "phone": "02-1234-3004", "is_department_head": false},
+    {"name": "노현우", "department_id": 4, "position": "사원", "role": "전표입력, 증빙관리, 통장관리", "email": "hw.no@company.com", "phone": "02-1234-3005", "is_department_head": false},
+
+    {"name": "강서준", "department_id": 5, "position": "팀장", "role": "구매기획, 협력업체 관리 총괄", "email": "sj.kang@company.com", "phone": "02-1234-4001", "is_department_head": true},
+    {"name": "조은비", "department_id": 5, "position": "과장", "role": "자재구매, 단가협상, 발주관리", "email": "eb.cho@company.com", "phone": "02-1234-4002", "is_department_head": false},
+    {"name": "신도윤", "department_id": 5, "position": "대리", "role": "외주관리, 용역계약, 하도급 관리", "email": "dy.shin@company.com", "phone": "02-1234-4003", "is_department_head": false},
+    {"name": "문예린", "department_id": 5, "position": "대리", "role": "계약관리, 입찰관리, 계약서 검토", "email": "yr.moon@company.com", "phone": "02-1234-4004", "is_department_head": false},
+    {"name": "서지안", "department_id": 5, "position": "사원", "role": "구매요청 처리, 납품검수, 재고관리", "email": "ja.seo@company.com", "phone": "02-1234-4005", "is_department_head": false},
+
+    {"name": "이준혁", "department_id": 7, "position": "팀장", "role": "개발1팀 총괄, 서비스 아키텍처 설계, 코드 리뷰", "email": "jh.lee2@company.com", "phone": "02-1234-5001", "is_department_head": true},
+    {"name": "김서현", "department_id": 7, "position": "과장", "role": "백엔드 개발, API 설계, DB 설계", "email": "sh.kim2@company.com", "phone": "02-1234-5002", "is_department_head": false},
+    {"name": "정우진", "department_id": 7, "position": "대리", "role": "프론트엔드 개발, React/Next.js", "email": "wj.jung@company.com", "phone": "02-1234-5003", "is_department_head": false},
+    {"name": "한소율", "department_id": 7, "position": "대리", "role": "모바일 앱 개발, Flutter/React Native", "email": "sy.han@company.com", "phone": "02-1234-5004", "is_department_head": false},
+    {"name": "배현우", "department_id": 7, "position": "사원", "role": "풀스택 개발 보조, 테스트 코드 작성", "email": "hw.bae@company.com", "phone": "02-1234-5005", "is_department_head": false},
+
+    {"name": "조현수", "department_id": 8, "position": "팀장", "role": "AI/빅데이터 팀 총괄, 데이터 전략 수립", "email": "hs.cho@company.com", "phone": "02-1234-5101", "is_department_head": true},
+    {"name": "유지영", "department_id": 8, "position": "과장", "role": "데이터 엔지니어링, ETL 파이프라인 구축", "email": "jy.yu@company.com", "phone": "02-1234-5102", "is_department_head": false},
+    {"name": "남기훈", "department_id": 8, "position": "대리", "role": "머신러닝 모델 개발, MLOps", "email": "kh.nam@company.com", "phone": "02-1234-5103", "is_department_head": false},
+    {"name": "이채원", "department_id": 8, "position": "대리", "role": "데이터 분석, BI 대시보드 구축", "email": "cw.lee@company.com", "phone": "02-1234-5104", "is_department_head": false},
+    {"name": "권도현", "department_id": 8, "position": "사원", "role": "데이터 수집, 전처리, 시각화", "email": "dh.kwon@company.com", "phone": "02-1234-5105", "is_department_head": false},
+
+    {"name": "박성민", "department_id": 9, "position": "팀장", "role": "인프라 총괄, 클라우드 아키텍처 설계", "email": "sm.park@company.com", "phone": "02-1234-5201", "is_department_head": true},
+    {"name": "안지우", "department_id": 9, "position": "과장", "role": "서버 운영, Linux/Windows 관리", "email": "jw.ahn@company.com", "phone": "02-1234-5202", "is_department_head": false},
+    {"name": "홍재석", "department_id": 9, "position": "대리", "role": "네트워크 관리, 방화벽, VPN 운영", "email": "js.hong@company.com", "phone": "02-1234-5203", "is_department_head": false},
+    {"name": "전미소", "department_id": 9, "position": "대리", "role": "보안 운영, 취약점 점검, 보안솔루션 관리", "email": "ms.jeon@company.com", "phone": "02-1234-5204", "is_department_head": false},
+    {"name": "류건호", "department_id": 9, "position": "사원", "role": "모니터링, 장애 대응, 백업 관리", "email": "gh.ryu@company.com", "phone": "02-1234-5205", "is_department_head": false},
+
+    {"name": "김도훈", "department_id": 10, "position": "팀장", "role": "QA 총괄, 품질 전략 수립, 릴리스 관리", "email": "dh.kim2@company.com", "phone": "02-1234-5301", "is_department_head": true},
+    {"name": "오수빈", "department_id": 10, "position": "과장", "role": "테스트 자동화, Selenium/Playwright 관리", "email": "sb.oh@company.com", "phone": "02-1234-5302", "is_department_head": false},
+    {"name": "차유진", "department_id": 10, "position": "대리", "role": "기능 테스트, 테스트 케이스 작성", "email": "yj.cha@company.com", "phone": "02-1234-5303", "is_department_head": false},
+    {"name": "임수현", "department_id": 10, "position": "대리", "role": "성능 테스트, 부하 테스트, JMeter", "email": "sh.lim@company.com", "phone": "02-1234-5304", "is_department_head": false},
+    {"name": "고은서", "department_id": 10, "position": "사원", "role": "수동 테스트, 버그 리포트 작성", "email": "es.ko@company.com", "phone": "02-1234-5305", "is_department_head": false},
+
+    {"name": "정석현", "department_id": 12, "position": "팀장", "role": "국내영업 총괄, 매출 목표 관리, 핵심 고객 관리", "email": "sh.jung2@company.com", "phone": "02-1234-6001", "is_department_head": true},
+    {"name": "양미정", "department_id": 12, "position": "과장", "role": "기업 솔루션 영업, 제안서 작성, PT", "email": "mj.yang@company.com", "phone": "02-1234-6002", "is_department_head": false},
+    {"name": "손태윤", "department_id": 12, "position": "대리", "role": "신규 고객 발굴, 영업 미팅, 계약 관리", "email": "ty.son@company.com", "phone": "02-1234-6003", "is_department_head": false},
+    {"name": "나윤아", "department_id": 12, "position": "대리", "role": "고객 관계 관리(CRM), 거래처 유지보수 영업", "email": "ya.na@company.com", "phone": "02-1234-6004", "is_department_head": false},
+    {"name": "하준서", "department_id": 12, "position": "사원", "role": "영업 지원, 견적서 작성, 계약서 관리", "email": "js.ha@company.com", "phone": "02-1234-6005", "is_department_head": false},
+
+    {"name": "윤성호", "department_id": 13, "position": "팀장", "role": "해외영업 총괄, 글로벌 전략 수립, 해외 파트너 관리", "email": "sh.yoon@company.com", "phone": "02-1234-6101", "is_department_head": true},
+    {"name": "장하늘", "department_id": 13, "position": "과장", "role": "동남아 시장 영업, 현지 에이전트 관리", "email": "hn.jang@company.com", "phone": "02-1234-6102", "is_department_head": false},
+    {"name": "김라엘", "department_id": 13, "position": "대리", "role": "일본·중국 시장 영업, 수출 서류 관리", "email": "re.kim@company.com", "phone": "02-1234-6103", "is_department_head": false},
+    {"name": "이다은", "department_id": 13, "position": "대리", "role": "유럽·미주 시장 영업, 해외 전시 참가", "email": "de.lee@company.com", "phone": "02-1234-6104", "is_department_head": false},
+    {"name": "최원빈", "department_id": 13, "position": "사원", "role": "해외 영업 지원, 번역, 통관 업무 보조", "email": "wb.choi@company.com", "phone": "02-1234-6105", "is_department_head": false},
+
+    {"name": "서민재", "department_id": 14, "position": "팀장", "role": "마케팅 총괄, 브랜드 전략, 마케팅 예산 관리", "email": "mj.seo@company.com", "phone": "02-1234-6201", "is_department_head": true},
+    {"name": "금하린", "department_id": 14, "position": "과장", "role": "디지털 마케팅, SEO/SEM, 퍼포먼스 광고", "email": "hr.geum@company.com", "phone": "02-1234-6202", "is_department_head": false},
+    {"name": "도경수", "department_id": 14, "position": "대리", "role": "콘텐츠 마케팅, SNS 운영, 블로그 관리", "email": "ks.do@company.com", "phone": "02-1234-6203", "is_department_head": false},
+    {"name": "유하은", "department_id": 14, "position": "대리", "role": "시장 조사, 경쟁사 분석, 리포트 작성", "email": "he.yu@company.com", "phone": "02-1234-6204", "is_department_head": false},
+    {"name": "민세진", "department_id": 14, "position": "사원", "role": "이벤트 기획, 홍보물 제작, 디자인 보조", "email": "sj.min@company.com", "phone": "02-1234-6205", "is_department_head": false},
+
+    {"name": "구본혁", "department_id": 15, "position": "팀장", "role": "고객지원 총괄, CS 전략, SLA 관리", "email": "bh.gu@company.com", "phone": "02-1234-6301", "is_department_head": true},
+    {"name": "탁지선", "department_id": 15, "position": "과장", "role": "기술지원, 장애 대응, 에스컬레이션 관리", "email": "js.tak@company.com", "phone": "02-1234-6302", "is_department_head": false},
+    {"name": "방세희", "department_id": 15, "position": "대리", "role": "고객 문의 대응, 이메일/전화 상담", "email": "sh.bang@company.com", "phone": "02-1234-6303", "is_department_head": false},
+    {"name": "피수아", "department_id": 15, "position": "대리", "role": "고객 만족도 조사, VOC 분석", "email": "sa.pi@company.com", "phone": "02-1234-6304", "is_department_head": false},
+    {"name": "곽지후", "department_id": 15, "position": "사원", "role": "상담 접수, FAQ 관리, 매뉴얼 작성", "email": "jh.gwak@company.com", "phone": "02-1234-6305", "is_department_head": false},
+
+    {"name": "문정원", "department_id": 17, "position": "팀장", "role": "AI연구 총괄, 연구과제 관리, 논문 지도", "email": "jw.moon@company.com", "phone": "02-1234-7001", "is_department_head": true},
+    {"name": "석지훈", "department_id": 17, "position": "과장", "role": "자연어처리(NLP) 연구, LLM 파인튜닝", "email": "jh.seok@company.com", "phone": "02-1234-7002", "is_department_head": false},
+    {"name": "진아름", "department_id": 17, "position": "대리", "role": "컴퓨터비전 연구, 이미지 인식 모델 개발", "email": "ar.jin@company.com", "phone": "02-1234-7003", "is_department_head": false},
+    {"name": "표성준", "department_id": 17, "position": "대리", "role": "강화학습 연구, 추천 시스템 개발", "email": "sj.pyo@company.com", "phone": "02-1234-7004", "is_department_head": false},
+    {"name": "황다솜", "department_id": 17, "position": "사원", "role": "데이터 라벨링, 실험 보조, 연구 자료 관리", "email": "ds.hwang@company.com", "phone": "02-1234-7005", "is_department_head": false},
+
+    {"name": "채동건", "department_id": 18, "position": "팀장", "role": "보안연구 총괄, 보안 전략 수립, 특허 관리", "email": "dg.chae@company.com", "phone": "02-1234-7101", "is_department_head": true},
+    {"name": "염수지", "department_id": 18, "position": "과장", "role": "암호화 기술 연구, 보안 프로토콜 설계", "email": "sj.yeom@company.com", "phone": "02-1234-7102", "is_department_head": false},
+    {"name": "편지호", "department_id": 18, "position": "대리", "role": "취약점 분석, 모의 해킹, 보안 감사", "email": "jh.pyeon@company.com", "phone": "02-1234-7103", "is_department_head": false},
+    {"name": "국현진", "department_id": 18, "position": "대리", "role": "악성코드 분석, 보안 이벤트 모니터링", "email": "hj.guk@company.com", "phone": "02-1234-7104", "is_department_head": false},
+    {"name": "위서연", "department_id": 18, "position": "사원", "role": "보안 로그 분석, 보안 문서 관리", "email": "sy.wi@company.com", "phone": "02-1234-7105", "is_department_head": false}
+  ]
+}

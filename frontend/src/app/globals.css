@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', 'Pretendard', system-ui, sans-serif;
+  background-color: #1a1a2e;
+  color: #e5e7eb;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #333366;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444488;
+}
+
+/* Textarea auto-resize */
+textarea {
+  field-sizing: content;
+}
